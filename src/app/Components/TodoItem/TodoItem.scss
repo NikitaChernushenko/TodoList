@@ -1,0 +1,49 @@
+@import "~pretty-checkbox/src/pretty-checkbox.scss";
+.svg {
+  color: green;
+}
+.wrapper {
+}
+.item_li {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  padding: 1rem 2rem;
+}
+.trash {
+  display: grid;
+  grid-template-columns: 30px auto;
+  cursor: pointer;
+  color: rgb(190, 190, 190);
+}
+.state {
+  display: grid;
+  grid-template: 30px auto;
+}
+
+.label {
+  display: grid;
+  text-align: start;
+  overflow: hidden;
+  width: 96%;
+}
+
+.labelChecked {
+  display: grid;
+  text-align: start;
+  overflow: hidden;
+  width: 90%;
+  text-decoration: line-through;
+  color: #d9d9d9;
+}
+
+.list-group-item:first-child {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+}
+
+.pretty.p-svg input:checked ~ .state .svg {
+  height: 22px;
+  margin-left: 4px;
+  width: 14px;
+}
